@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.studentattendancesystem">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_ctu"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentAttendanceSystem"
+        tools:targetApi="31">
+        <activity
+            android:name=".teacher.TeacherAttendanceSheet"
+            android:exported="false"
+            android:noHistory="true"/>
+        <activity
+            android:name=".teacher.TeacherInsertStudent"
+            android:exported="false"
+            android:noHistory="true"/>
+        <activity
+            android:name=".teacher.TeacherStudentList"
+            android:exported="false"
+            android:noHistory="true"/>
+        <activity
+            android:name=".teacher.TeacherStudentAttendance"
+            android:exported="false"
+            android:noHistory="true"/>
+        <activity
+            android:name=".teacher.TeacherPickDate"
+            android:exported="false"
+            android:noHistory="true"/>
+        <activity
+            android:name=".teacher.TeacherMenu"
+            android:exported="false" />
+        <activity
+            android:name=".teacher.TeacherCreateDelete"
+            android:exported="false"
+            android:noHistory="true"/>
+        <activity
+            android:name=".admin.AdminCreateDeleteAccount"
+            android:exported="false"
+            android:noHistory="true"/>
+        <activity
+            android:name=".admin.AdminCreateDelete"
+            android:exported="false"
+            android:noHistory="true"/>
+        <activity
+            android:name=".admin.AdminWall"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:noHistory="true"/>
+        <activity
+            android:name=".admin.AdminTeacherList"
+            android:exported="false"
+            android:noHistory="true"/>
+        <activity
+            android:name=".admin.AdminStudentList"
+            android:exported="false"
+            android:noHistory="true"/>
+        <activity
+            android:name=".teacher.TeacherWall"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
